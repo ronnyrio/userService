@@ -6,28 +6,32 @@ Build Restful CRUD API for a blog using Spring Boot, Mysql, JPA and Hibernate.
 
 ## Steps to Setup
 
-**1. Clone the application**
+**1. Clona la aplicación**
 
 ```bash
-git clone https://github.com/coma123/Spring-Boot-Blog-REST-API.git
+git clone https://github.com/ronnyrio/userService.git
 ```
 
-**2. Create Mysql database**
-```bash
-create database blogapi
-```
-- run `src/main/resources/blogapi.sql`
+**2. Crea la base de datos mysql en docker**
 
-**3. Change mysql username and password as per your installation**
+cd userService
+docker-compose up
+para y arranca usserservice en la consola de docker
 
-+ open `src/main/resources/application.properties`
-+ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
-
-**4. Run the app using maven**
+**3. Arranca la aplicación con maven**
 
 ```bash
 mvn spring-boot:run
 ```
+Esto te debería funcionar sin problema. 
+Crea una conexion en dbeaver de tipo mysql con los siguientes datos y prueba que te conectas:
+    Server Host : localhost
+    Port : 3306
+    Nombre usuario: root
+    Contraseña: root
+Revisa las tablas creadas en el esquema blogapi.
+Aquí tenemos que hablar de la manera de implementar la seguridad que no está muy bien explicado aquí. Si ejecutas cualquier endpoint te dará error.
+
 The app will start running at <http://localhost:8080>
 
 ## Explore Rest APIs

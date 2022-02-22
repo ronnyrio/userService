@@ -19,17 +19,7 @@ services:
       retries: 10
     volumes:
       - ./data:/docker-entrypoint-initdb.d
-  application:
-    container_name: blogapi-application
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
-    networks:
-      - blogapi-network
-    depends_on:
-      - "db"
+
 networks:
   blogapi-network:
     name: blogapi-network
