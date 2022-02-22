@@ -13,16 +13,18 @@ git clone https://github.com/ronnyrio/userService.git
 ```
 
 **2. Crea la base de datos mysql en docker**
-
+```bash
 cd userService
 docker-compose up
 para y arranca usserservice en la consola de docker
+```
 
 **3. Arranca la aplicación con maven**
 
 ```bash
 mvn spring-boot:run
 ```
+```bash
 Esto te debería funcionar sin problema. 
 Crea una conexion en dbeaver de tipo mysql con los siguientes datos y prueba que te conectas:
     Server Host : localhost
@@ -31,6 +33,7 @@ Crea una conexion en dbeaver de tipo mysql con los siguientes datos y prueba que
     Contraseña: root
 Revisa las tablas creadas en el esquema blogapi.
 Aquí tenemos que hablar de la manera de implementar la seguridad que no está muy bien explicado aquí. Si ejecutas cualquier endpoint te dará error.
+```
 
 The app will start running at <http://localhost:8080>
 
