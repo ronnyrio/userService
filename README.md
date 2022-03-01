@@ -11,6 +11,7 @@ Build Restful CRUD API for a blog using Spring Boot, Mysql, JPA and Hibernate.
 ```bash
 git clone https://github.com/ronnyrio/userService.git
 ```
+hecho
 
 **2. Crea la base de datos mysql en docker**
 ```bash
@@ -18,6 +19,7 @@ cd userService
 docker-compose up
 para y arranca usserservice en la consola de docker
 ```
+hecho
 
 **3. Arranca la aplicación con maven**
 
@@ -34,6 +36,7 @@ Crea una conexion en dbeaver de tipo mysql con los siguientes datos y prueba que
 Revisa las tablas creadas en el esquema blogapi.
 Aquí tenemos que hablar de la manera de implementar la seguridad que no está muy bien explicado aquí. Si ejecutas cualquier endpoint te dará error.
 ```
+hecho
 
 The app will start running at <http://localhost:8080>
 
