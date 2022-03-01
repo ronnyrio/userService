@@ -69,7 +69,7 @@ public class UserController {
 	public ResponseEntity<UserProfile> getUSerProfile(@PathVariable(value = "username") String username) {
 		UserProfile userProfile = userService.getUserProfile(username);
 
-		return new ResponseEntity< >(userProfile, HttpStatus.OK);
+ 		return new ResponseEntity< >(userProfile, HttpStatus.OK);
 	}
 
 	@GetMapping("/{username}/posts")
