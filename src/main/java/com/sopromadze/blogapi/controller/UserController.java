@@ -65,6 +65,7 @@ public class UserController {
 	}
 
 	@GetMapping("/{username}/profile")
+	@PreAuthorize("hasRole('USER')")
 	public ResponseEntity<UserProfile> getUSerProfile(@PathVariable(value = "username") String username) {
 		UserProfile userProfile = userService.getUserProfile(username);
 
