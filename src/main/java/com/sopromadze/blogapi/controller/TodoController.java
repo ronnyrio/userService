@@ -26,8 +26,6 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/api/todos")
 public class TodoController {
-
-
 	@Autowired
 	private TodoService todoService;
 
