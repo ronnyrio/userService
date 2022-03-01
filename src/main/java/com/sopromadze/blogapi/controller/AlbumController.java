@@ -34,8 +34,6 @@ import javax.validation.Valid;
 @RequestMapping("/api/albums")
 public class AlbumController {
 
-
-	
 	@Autowired
 	private AlbumService albumService;
 

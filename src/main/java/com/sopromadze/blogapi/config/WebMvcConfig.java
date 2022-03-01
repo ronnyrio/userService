@@ -8,6 +8,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
+
+	
 	@Value("cors.allowedOrings")
 	private String allowedOrigins;
 
