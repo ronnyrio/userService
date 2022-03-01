@@ -40,9 +40,6 @@ public class AlbumController {
 	private AlbumService albumService;
 
 	@Autowired
-
-
-	
 	private PhotoService photoService;
 
 	@ExceptionHandler(ResponseEntityErrorException.class)
